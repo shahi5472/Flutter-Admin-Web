@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_admin/constants.dart';
 import 'package:flutter_web_admin/controllers/menu_controller.dart';
 import 'package:flutter_web_admin/responsive.dart';
+import 'package:flutter_web_admin/screens/components/profile_card.dart';
+import 'package:flutter_web_admin/screens/components/search_field.dart';
 import 'package:flutter_web_admin/screens/components/slide_bar.dart';
 import 'package:flutter_web_admin/screens/dashboard/dashboard_screen.dart';
 import 'package:provider/provider.dart';
