@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin/constants.dart';
+import 'package:flutter_web_admin/responsive.dart';
 
 class ProfileCard extends StatelessWidget {
   const ProfileCard({
@@ -25,12 +26,14 @@ class ProfileCard extends StatelessWidget {
             'assets/images/profile_pic.png',
             height: 38,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
-            child: Text(
-              'S.M. SHAHi',
+          if (!Responsive.isMobile(context))
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+              child: Text(
+                'S.M. SHAHi',
+              ),
             ),
-          ),
           Icon(
             Icons.keyboard_arrow_down,
           ),
