@@ -17,7 +17,7 @@ class DashboardScreen extends StatelessWidget {
         padding: EdgeInsets.all(defaultPadding),
         child: Column(
           children: [
-            Header(),
+            if (!Responsive.isMobile(context)) Header(),
             SizedBox(
               height: defaultPadding,
             ),
